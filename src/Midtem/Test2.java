@@ -7,47 +7,28 @@ public class Test2 {
     public static void main (String[] args){
         String id = getID();
         String name = getName();
-        String salary = getSalary();
+        String salay = getSalay();
         String overTime = getOverTime();
-        String calculateTax = calculateTax();
-        String showDataInfo = showDataInfo();
+
+        System.out.println(id+"\n"+name+"\n"+salay+"\n"+overTime);
+        System.out.println(getID()+"\n"+getName()+"\n"+getSalay()+"\n"+getOverTime());
 
 
+    }//getID
+    public static String getID()throws IOException {
+        System.out.print("Enter your id: ");
+        return scanner.nextLine();
+    }//getName
+    public static String getName()throws IOException{
+        System.out.print("Enter your name: ");
+        return scanner.nextLine();
+    }//getSalay
+    public static String getSalay()throws IOException{
+        System.out.print("Enter your  and salay: ");
+        return scanner.nextLine();
+    }//getOverTime
+    public static String getOverTime()throws IOException{
+        System.out.print("Enter your overTime: ");
+        return scanner.nextLine();
     }//main
-    private static String getID(){
-        System.out.print("Enter employee id: ");
-        return scanner.nextLine();
-    }
-
-    private static String getName(){
-        System.out.print("Enter employee name: ");
-        return scanner.nextLine();
-
-    }
-
-    private static String getSalary(){
-        System.out.print("Enter employee salary: ");
-        return scanner.nextLine();
-    }
-
-    private static String getOverTime(){
-        System.out.print("Enter employee overtime: ");
-        return scanner.nextLine();
-    }
-
-    private static String calculateTax(){
-        System.out.print("Enter employee calculatetax: ");
-        return scanner.nextLine();
-
-    }
-
-    private static String showDataInfo(){
-        System.out.print("Enter employee showdatainfo: ");
-        return scanner.nextLine();
-
-
-
-
-    }
-
 }//class
