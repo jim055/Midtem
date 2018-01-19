@@ -53,6 +53,6 @@ public class Test2 {
             System.out.println("\nเงินเดือนสุทธิ: "+ net);
             System.out.println("\nภาษีที่ต้องเสีย:" +net*1/100);
         }
-    }
+    }//main
 }//class
 
